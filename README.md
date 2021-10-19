@@ -8,6 +8,14 @@ This is a "translation" of the [simple-form-react-node](https://github.com/IgorK
 
 For now, I'm moving features to ts. My goal is to move the React part - Node will probably stay in clean JS.
 
+## Instructions
+The app is using a Docker containers, so to make it works you need to install a docker on your computer.
+
+After getting the docker on your computer you can enter to the main dir which contains docker-compose.yml file. There you have to run the `docker-compose up`. The installation process can take a moment.
+
+> I've added the script to package.json file in react-ts directory, to speed up the development. So if you wish you can skip the `docker-compose up` command. Just go straight to react-ts dir and run `npm run reload`. Just check if `&&` in the script is acceptable on your system
+
+After that you can go to your browser and check the http://localhost:3000/, where you should find that the app is running.
 ## Stack
 * [axios](https://axios-http.com/)
 * [formik](https://formik.org/)
