@@ -7,7 +7,7 @@ interface IPreUser {
 }
 
 interface IUser {
-  id: string;
+  _id: string;
   email: string;
   firstName: string;
   lastName: string;
@@ -26,7 +26,7 @@ type TCurrentUserContext = {
 // Event
 
 interface IEvent {
-  id: string;
+  _id: string;
   name: string;
   date: number;
   organizer: string;
@@ -35,7 +35,7 @@ interface IEvent {
 interface PreEvent {
   name: string;
   date: number;
-  organizer: string;
+  userId: string;
 }
 
 type TEventContext = {

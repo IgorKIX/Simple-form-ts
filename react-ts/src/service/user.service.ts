@@ -5,7 +5,6 @@ class UserService {
 
   getAll = async (): Promise<IUser[]> => {
     const response = await axios.get(this.URL);
-    console.log(response.data);
 
     return response.data;
   };
